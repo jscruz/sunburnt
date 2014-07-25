@@ -1017,7 +1017,7 @@ class FacetQueryOptions(Options):
 
     def options(self):
         if self.queries:
-            return {'facet.query':[unicode(q) for q in self.queries],
+            return {'fq':[unicode(q) for q in self.queries],
                     'facet':True}
         else:
             return {}
